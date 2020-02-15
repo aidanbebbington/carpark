@@ -14,7 +14,6 @@ namespace Core.Services.Pricing
     public class PricingService : IPricingService
     {
         private readonly IEnumerable<IRate> _rates;
-        // AJB: validate that Exit > Entry
 
         public PricingService(IEnumerable<IRate> rates)
         {
@@ -25,6 +24,7 @@ namespace Core.Services.Pricing
         {
             if (request.Exit < request.Entry)
             {
+                // AJB: implement fluid validation
                 throw new Exception("Entry must be earlier than Exit");
             }
 

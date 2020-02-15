@@ -10,3 +10,4 @@
 * Extract pricing rate constants to configuration or external data source to allow them to be updated and vary by environment or parking provider
 * If timezone support is required something like Nodatime is very useful
 * Could extract extensions such as DateTimeExtensions to a shared Nuget, or potentially find another library if it more complex operations are required
+* Add presentation models and data models.  The current models are essentially the domain models.
