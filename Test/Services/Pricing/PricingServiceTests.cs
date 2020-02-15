@@ -33,6 +33,8 @@ namespace Test.Services.Pricing
         [InlineData("Wednesday 5 hours", "2020-01-01T10:00", "2020-01-01T15:00", "Standard Rate", 20)]
         [InlineData("Saturday 30 minutes", "2020-01-04T10:00", "2020-01-04T10:30", "Standard Rate", 5)]
         [InlineData("Saturday 5 hours", "2020-01-04T10:00", "2020-01-04T15:00", "Weekend Rate", 10)]
+        [InlineData("Saturday early bird 10 hours", "2020-01-04T08:00", "2020-01-04T18:00", "Weekend Rate", 10)]
+        [InlineData("Friday to Saturday 5 hours", "2020-01-03T20:00", "2020-01-04T01:00", "Night Rate", 6.5)]
         public void TestGetPricing(string description, string entry, string exit, string expectedDescription, decimal expectedTotalCost)
         {
             var service = _serviceProvider.GetService<IPricingService>();

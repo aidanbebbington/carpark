@@ -28,7 +28,8 @@ namespace Core.Services.Pricing
                 throw new Exception("Entry must be earlier than Exit");
             }
 
-            return _rates.Where(x => x.IsApplicable(request))
+            return _rates
+                .Where(x => x.IsApplicable(request))
                 .Select(x => x.GetPricing(request))
                 .OrderBy(x => x.TotalPrice)
                 .First();
