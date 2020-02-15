@@ -1,0 +1,49 @@
+
+<h3>How long will you be parking?</h3>
+
+<form class="form">
+    <div class="form-group row">
+    </div>
+    
+    <div class="form-group row">
+        <label for="entryDate" class="col-sm-2 col-form-label">Entry</label>
+        <div class="input-group col-sm-3">
+            <ngb-timepicker name="entryTime" id="entryTime" [(ngModel)]="entryTime" [spinners]="false"></ngb-timepicker>
+        </div>
+        <div class="input-group col-sm-4">
+            <input class="form-control" placeholder="yyyy-mm-dd"
+                name="entryDate" id="entryDate" [(ngModel)]="entryDate" ngbDatepicker #entryDatePicker="ngbDatepicker">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary calendar" (click)="entryDatePicker.toggle()" type="button"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="exitDate" class="col-sm-2 col-form-label">Exit</label>
+        <div class="input-group col-sm-3">
+            <ngb-timepicker name="exitTime" id="exitTime" [(ngModel)]="exitTime" [spinners]="false"></ngb-timepicker>
+        </div>
+        <div class="input-group col-sm-4">
+            <input class="form-control" placeholder="yyyy-mm-dd"
+                name="exitDate" id="exitDate" [(ngModel)]="exitDate" ngbDatepicker #exitDatePicker="ngbDatepicker">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary calendar" (click)="exitDatePicker.toggle()" type="button"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="offset-sm-7">
+            <button (click)="calculate()">Calculate</button>
+        </div>
+    </div>
+</form>
+
+<div *ngIf="pricingResponse">
+    <h3>Rate</h3>
+
+    <div>{{pricingResponse.description}}</div>
+    <div>{{pricingResponse.totalPrice}}</div>
+</div>
+
