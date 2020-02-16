@@ -1,5 +1,9 @@
 # Back End
 
+This solution provides all the pricing calculation functionality as requested by the spec, but there are several more things required to make this production ready.
+
+I've opted to create an .NET Core WebAPI because I was hoping to build and Angular front end (more on that below).  The quickest way to manually test the project is through swagger.
+
 ## System Requiremnts
 
 * Visual Studio 2019
@@ -25,6 +29,8 @@
 * If timezone support is required use a library such as Nodatime to simplify conversion
 * Could extract extensions such as DateTimeExtensions to a shared Nuget, or potentially find another library if it more complex operations are required
 * Add presentation models and data models.  The project currently has just one layer of models, which are essentially the domain models, since no presentation or data storage is required.
+
+---
 
 # Front End
 
