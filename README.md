@@ -57,8 +57,8 @@ It's my first attempt to begin an Angular project, and there's a several steps I
 
 ## System Requirements
 
-* Node.js & NPM
-* Angular CLI
+* Node.js & NPM:  ``https://nodejs.org/en/download/``
+* Angular CLI:  ``npm install -g @angular/cli``
 
 ## Getting Started
 
