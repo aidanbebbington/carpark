@@ -21,7 +21,7 @@ export class PricingCalculatorComponent implements OnInit {
 
   calculate(): void {
     this.service.getPricing().subscribe(pricingResponse => {
-      this.pricingResponse = pricingResponse;
+      //this.pricingResponse = pricingResponse;
     });
   }
 
