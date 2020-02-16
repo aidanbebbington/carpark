@@ -14,7 +14,7 @@ I've opted to create an .NET Core Web API because I was hoping to build an Angul
 * Open & build Carpark.sln
 * Run Web project with IIS Express
 * You should now see the main Swagger UI page for the project in your defualt browser
-* If not, open a browser and navigate to http://localhost:5000/swagger/index.html
+* If not, open a browser and navigate to ``http://localhost:5000/swagger/index.html``
 
 ## Assumptions
 
@@ -41,7 +41,7 @@ It's my first attempt to begin an Angular project, and there's a several steps I
 
 ## Completed Tasks
 
-* Create a new Angular project using Angular CLI to setup testing, routing, SASS, linting and other commond dependencies
+* Create a new Angular project using Angular CLI to setup testing, routing, SASS, linting and other common dependencies
 * Create an Angular component & service to represent the pricing calculator
 * Create a form using Angular Bootstrap with data binding to allow the user to input their entry and exit date & times
 * Use Angular's HttpClient to make a web request when the user clicks Calculate
@@ -61,6 +61,6 @@ It's my first attempt to begin an Angular project, and there's a several steps I
 ## Getting Started
 
 * Open a Powershell window within the "UI" directory
-* Execute npm install
-* Execute ng serve
-* Navigate in a web browser to http://localhost:4200/
+* Execute ``npm install``
+* Execute ``ng serve``
+* Navigate in a web browser to ``http://localhost:4200/``
