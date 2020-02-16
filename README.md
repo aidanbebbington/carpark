@@ -2,7 +2,9 @@
 
 This solution provides all the pricing calculation functionality as requested by the spec, but some more time would be required to make it production ready.
 
-I've opted to create an .NET Core Web API because I was hoping to build an Angular front end (more on that below).  The quickest way to manually test the project is through Swagger UI.
+I've opted to create an .NET Core Web API because I was hoping to build an Angular front end (more on that below).
+
+The quickest way to manually test the project is through Swagger UI, although thorough unit tests are included.
 
 ## System Requiremnts
 
@@ -11,8 +13,8 @@ I've opted to create an .NET Core Web API because I was hoping to build an Angul
 
 ## Getting Started
 
-* Open & build Carpark.sln
-* Run Web project with IIS Express
+* Open & build ``Carpark.sln`` with ``Visual Studio 2019``
+* Run ``Web`` project with ``IIS Express``
 * You should now see the main Swagger UI page for the project in your defualt browser
 * If not, open a browser and navigate to ``http://localhost:5000/swagger/index.html``
 
